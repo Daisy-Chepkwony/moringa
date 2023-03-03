@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/image.jpeg);
+    background-size: cover;
+    background-position:center;
+    border-radius: 15px;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 250px;
+    color: aquamarine;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.4s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+
+}
+.header-text{
+    margin-top: 25%;
+    font-size:30px;
+
+}
+.header-text h1{
+    margin-top: 45px;
+    font-size: 70px;
+}
+/*---about---*/
+#about{
+    padding: 80px 0;
+    
+}
+.row{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+.about-col-1{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+    
+}
+.subtitle{
+    color: aqua;
+    font-size:65 ;
+    font-weight: 600;
+}
+.tab-titles{
+    display: flex;
+    margin: 10px 0 5px;
+}
+.tab-links{
+    margin: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.4s;
+
+}
+.tab-links.active-links::after{
+width: 50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 15px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*----portfolio---*/
+.portfolio{
+    padding: 50px 0;
+}
+.work{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+#work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work img{
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+    height: 70%;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7)),#800000;
+    position: absolute;
+    left: 10px;
+    margin: 0;
+    text-align: right;
+    top: 20px;
+    right: 30px;
+}
+.media{
+    color: aqua;
+    margin-left: 25%;
+    font-size: large;
+    
+}
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px 250px;
+    padding: 10px;
+  }
+.footer{
+    margin: auto;
+  width: 50%;
+  padding:  -180px 0;
+}
